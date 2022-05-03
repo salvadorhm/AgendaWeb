@@ -2,15 +2,15 @@
 .mode column
 PRAGMA foreign_keys = ON;
 
-CREATE TABLE clientes (
-    id_cliente integer PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE personas (
+    id_persona integer PRIMARY KEY AUTOINCREMENT,
     nombre varchar(50),
     email varchar(50)
 );
 
-INSERT INTO clientes(nombre,email)
+INSERT INTO personas(nombre,email)
 VALUES
 ('Dejah','dejah@email.com'),
 ('Jonh','jonh@email.com');
 
-SELECT * FROM clientes;
+SELECT * FROM personas;
